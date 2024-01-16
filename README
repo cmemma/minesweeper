@@ -1,0 +1,21 @@
+ COMP.CS.110 Programming 2, Autumn 2021
+ Project4: Minesweeper GUI
+ 
+Desc:
+This program contains a graphic user interface minesweeper game. 
+The gameboard consists of QPushButtons that the user can push down to see underneath. The button can be a mine and if user opens a mine, the game ends. If user opens empty button, the button presents the number of adjacent mines. If button with 0 adjacent mines is opened, the gameboard opens all the buttons next to this button.
+User can also flag the squares that they think contains a mine. The flagged button cannot be opened until the flag has been removed by clicking the button with a flag. If user is unsure about a square, they can mark it with a questionmark the same way they can mark the flag. A question mark button can be opened or the questionmark can be removed. User can choose if they want to flag, question mark or open the button by clicking a QPushButton next to the board. This button contains an image of the wanted action, for example a flag. If the button currently contains a flag image, user can input flag by clicking the gameboard buttons. When clicking the button next to the board, it changes to a question mark and then user can input a question mark to the board.
+Before starting the game, user can input a wanted seed number that affects the placement of the mines. If no seed is inputted, the seed is 0. After inputting seed, user can start the game by clicking start button. Before this all the buttons are disabled but start button enables the gameboard buttons. This also starts the timer. 
+If user has flagged all of the mines, they win and game stops and all buttons are disabled. If user hits a mine, they lose and game stops. When mine is hitted, all of the mines open and all buttons are disabled.
+User can reset the game anytime by clicking the reset button. After that the seed can be inputted again and game can be started. The timer resets also.
+
+Extras:
+-questionmark can be added to a button
+-choosing the opening, flag or questionmark is implemented with a single QPushButton
+
+Program author
+
+Name: Emma Mannila
+E-Mail: emma.mannila01@gmail.com
+ 
+ 
